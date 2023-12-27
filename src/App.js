@@ -1,4 +1,4 @@
-import { Box,Container,Stack} from "@mui/material";
+import { Box,Stack} from "@mui/material";
 
 function App() {
   return (
@@ -6,13 +6,18 @@ function App() {
     <Box>
       hello
     </Box>
-    <Container sx={{background:"tomato"}}>
+    {/* <Container sx={{background:"tomato"}}>
         Hello
-    </Container>
-    <Stack sx={{background:"tomato"}}>
-      <Box>Box1</Box>
-      <Box>box2</Box>
-      <Box>box3</Box>
+    </Container> */}
+    <Stack 
+    direction={"row"} 
+    justifyContent="space-between"
+    alignItems="center"
+    spacing={2}
+    >
+      <Box flex={1} sx={{background:"tomato"}}>Box1</Box>
+      <Box flex={5} sx={{background:"blue"}}>box2</Box>
+      <Box flex={2} sx={{background:"green"}}>box3</Box>
     </Stack>
     </>
    
