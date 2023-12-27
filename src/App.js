@@ -1,19 +1,21 @@
-import { Button ,Typography} from "@mui/material";
-import FacebookIcon from '@mui/icons-material/Facebook';
+import { Box,Container,Stack} from "@mui/material";
 
 function App() {
   return (
-    <div className="App">
-      <Typography  align="center" variant="h1" color={"tomato"} 
-      sx={{
-        background:"red",
-        color:"white",
-        fontSize:"12px",
-      }}>
-       h1. Heading
-      </Typography>;
-        <Button  endIcon={<FacebookIcon/>}variant="outlined" color="secondary">Text</Button>
-    </div>
+<>
+    <Box>
+      hello
+    </Box>
+    <Container sx={{background:"tomato"}}>
+        Hello
+    </Container>
+    <Stack sx={{background:"tomato"}}>
+      <Box>Box1</Box>
+      <Box>box2</Box>
+      <Box>box3</Box>
+    </Stack>
+    </>
+   
   );
 }
 
