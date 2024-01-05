@@ -1,23 +1,33 @@
 import React from "react";
-import { Box, Grid } from "@mui/material";
-const Recent=()=>{
-    return(
-        <>
-            <Box>
-                <Grid container>
-                    <Grid item md={6} sx={{background:"tomato"}}>
-                        item1
-                    </Grid>
-                    <Grid item md={3} sx={{background:"blue"}}>
-                        item2
-                    </Grid>
-                    <Grid item md={3} sx={{background:"green"}}>
-                        item3
-                    </Grid>
-
+import {  Box, Grid } from "@mui/material";
+import cardImage from "../Static/image3.jpg";
+import Card from "../Component/Card/Card";
+const Recent = () => {
+    return (
+        <Box>
+            <Grid container rowSpacing={1} columnSpacing={1}>
+                <Grid item lg={12} sx={{height:"700"}}>
+                    <Card  cardImage={cardImage}/>
                 </Grid>
-            </Box>
-        </>
-    )
-}
-export default Recent
+              
+                <Grid item xs={6} >
+                    <Card cardImage={cardImage}/>
+                      
+                </Grid>
+                <Grid item xs={6} >
+                    <Card cardImage={cardImage}/>
+                      
+                </Grid> <Grid item xs={6} >
+                    <Card cardImage={cardImage}/>
+                      
+                </Grid> 
+                <Grid item xs={6}>
+                    <Card cardImage={cardImage}/>
+                      
+                </Grid>
+            </Grid>
+        </Box>
+    );
+};
+
+export default Recent;
