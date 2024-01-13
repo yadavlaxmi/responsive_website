@@ -1,11 +1,14 @@
 import React from "react"
 // import cardImage from "../image3.jpg"
 
-import {Box,CardContent,CardMedia,Typography} from "@mui/material"
+import {Link,Box,CardContent,CardMedia,Typography} from "@mui/material"
 const Card=({cardImage})=>{
     return(
         <>
         <Box>
+          <Link href="http://localhost:3000/details" sx={{textDecoration:"none"}}>
+
+          </Link>
             {" "}
         <CardMedia
         component="img"

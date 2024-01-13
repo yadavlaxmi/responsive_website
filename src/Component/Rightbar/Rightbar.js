@@ -25,7 +25,8 @@ const Rightbar=()=>{
               " — I'll be in your neighborhood doing errands this…"
           }
         />
-      </ListItem>  <ListItem alignItems="flex-end">
+      </ListItem> 
+       <ListItem alignItems="flex-end">
         <ListItemAvatar>
           <Avatar sx={{height:80, width:80}} variant="square" alt="Remy Sharp" src={postImage3} />
         </ListItemAvatar>
