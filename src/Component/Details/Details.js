@@ -19,7 +19,7 @@ const Details=()=>{
                     align="center"
                     color={"black"}
                     variant="h2"
-                    sx={{fontWeight:900,padding:10}}>
+                    sx={{fontWeight:800,padding:10}}>
                         Clicked Posts Title 
                     </Typography>
 
